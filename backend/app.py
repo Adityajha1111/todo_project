@@ -15,6 +15,8 @@ def submit_todo():
     itemDescription = request.form.get("itemDescription")
     itemID = request.form.get("itemID")
     itemUUID = request.form.get("itemUUID")
+    itemHash = request.form.get("itemHash")
+
 
 
 
@@ -22,7 +24,9 @@ def submit_todo():
         "itemName": itemName,
         "itemDescription": itemDescription,
         "itemID": itemID,
-        "itemUUID": itemUUID
+        "itemUUID": itemUUID,
+        "itemHash": itemHash
+
 
 
     }
