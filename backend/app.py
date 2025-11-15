@@ -14,12 +14,16 @@ def submit_todo():
     itemName = request.form.get("itemName")
     itemDescription = request.form.get("itemDescription")
     itemID = request.form.get("itemID")
+    itemUUID = request.form.get("itemUUID")
+
 
 
     data = {
         "itemName": itemName,
         "itemDescription": itemDescription,
-        "itemID": itemID
+        "itemID": itemID,
+        "itemUUID": itemUUID
+
 
     }
 
