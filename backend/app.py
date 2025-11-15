@@ -13,10 +13,25 @@ collection = db["items"]
 def submit_todo():
     itemName = request.form.get("itemName")
     itemDescription = request.form.get("itemDescription")
+    itemID = request.form.get("itemID")
+    itemUUID = request.form.get("itemUUID")
+    itemHash = request.form.get("itemHash")
+
+
+    
+
+   
+
+
+
 
     data = {
         "itemName": itemName,
-        "itemDescription": itemDescription
+        "itemDescription": itemDescription,
+        "itemID": itemID,
+        "itemUUID": itemUUID,
+        "itemHash": itemHash
+
     }
 
     result = collection.insert_one(data)
